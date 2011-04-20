@@ -18,6 +18,12 @@ set softtabstop=4
 set showmatch
 " set autoindent
 
+" Execute script you are editing without leaving VIM using :make
+" Also you can use :!python scriptname
+set makeprg=python\ %
+set autowrite
+
+
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
   augroup fedora
