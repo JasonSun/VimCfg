@@ -29,6 +29,8 @@ autocmd BufWritePre *.py :%s/\s\+$//e
 " SmartIndent in python file
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
+filetype plugin on
+
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
   augroup fedora
