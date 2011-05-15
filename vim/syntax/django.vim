@@ -1,3 +1,6 @@
+" How to Use
+" in vim, :setfiletye django or :setfiletype htmldjango
+"
 " Vim syntax file
 " Language:	Django template
 " Maintainer:	Dave Hodder <dmh@dmh.org.uk>
