@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/Jason/Solutions/Personal-Blog/templates/admin/flatpages/flatpage'
+let g:netrw_dirhist_2='/home/Jason/Solutions/Personal-Blog/templates/admin/flatpages'
+let g:netrw_dirhist_3='/home/Jason/Solutions/Personal-Blog/templates/admin'
+let g:netrw_dirhist_4='/home/Jason/Solutions/Personal-Blog/templates'
+let g:netrw_dirhist_5='/home/Jason/Solutions/Personal-Blog'
+let g:netrw_dirhist_6='/home/Jason/Solutions/Personal-Blog/templates'
