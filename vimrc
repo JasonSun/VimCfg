@@ -16,13 +16,18 @@ set shiftwidth=4
 set expandtab
 set softtabstop=4
 set showmatch
-" set autoindent
+set autoindent
 
 " Execute script you are editing without leaving VIM using :make
 " Also you can use :!python scriptname
 set makeprg=python\ %
 set autowrite
 
+" Trim Trailing Whitespaces
+autocmd BufWritePre *.py :%s/\s\+$//e
+
+" SmartIndent in python file
+autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
