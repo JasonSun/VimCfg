@@ -29,6 +29,12 @@ autocmd BufWritePre *.py :%s/\s\+$//e
 " SmartIndent in python file
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
+" Enable Python JS Html CSS code completion using <^x><^o>
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
 filetype plugin on
 
 " Only do this part when compiled with support for autocommands
